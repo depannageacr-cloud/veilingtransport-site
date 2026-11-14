@@ -28,11 +28,11 @@ class Doc(HTMLParser):
   if self.inTitle:self.title.append(s)
   if not self.skip:self.words.append(s)
 
-files=[R/'index.html']+[R/p['slug']/'index.html' for p in PAGES]
-docs={p:Doc(p.read_text()) for p in files};errors=[];graph={p:set() for p in files}
+files=[R/'index.html',R/'contact'/'index.php']+[R/p['slug']/'index.html' for p in PAGES]
+docs={p:Doc(re.sub(r'<\?php[\s\S]*?\?>|<\?=[\s\S]*?\?>','',p.read_text())) for p in files};errors=[];graph={p:set() for p in files}
 titles=[];descs=[]
 for p,d in docs.items():
- rel=p.relative_to(R).as_posix();expected=BASE+'/'+rel.removesuffix('index.html')
+ rel=p.relative_to(R).as_posix();expected=BASE+'/'+rel.removesuffix('index.html').removesuffix('index.php')
  if len(d.title)!=1:errors.append((rel,'title count',len(d.title)))
  if d.h1!=1:errors.append((rel,'h1 count',d.h1))
  if d.canonical!=[expected]:errors.append((rel,'canonical',d.canonical))
@@ -47,25 +47,25 @@ for p,d in docs.items():
   if u.netloc and u.netloc!='www.veilingtransport.be':continue
   path=unquote(u.path)
   target=(R/path.lstrip('/')) if path.startswith('/') else ((p.parent/path) if path else p)
-  if target.is_dir():target/='index.html'
+  if target.is_dir():target/= ('index.html' if (target/'index.html').exists() else 'index.php')
   if not target.exists():errors.append((rel,'missing target',ref));continue
   if target in docs:graph[p].add(target)
   if u.fragment and target in docs and unquote(u.fragment) not in docs[target].ids:errors.append((rel,'missing anchor',ref))
-assert len(set(titles))==41,'Duplicate titles'
-assert len(set(descs))==41,'Duplicate descriptions'
+assert len(set(titles))==42,'Duplicate titles'
+assert len(set(descs))==42,'Duplicate descriptions'
 xml=ET.parse(R/'sitemap.xml');locs=[x.text for x in xml.findall('.//{*}loc')]
-assert len(locs)==len(set(locs))==41
-assert set(locs)=={BASE+'/'+p.relative_to(R).as_posix().removesuffix('index.html') for p in files}
+assert len(locs)==len(set(locs))==42
+assert set(locs)=={BASE+'/'+p.relative_to(R).as_posix().removesuffix('index.html').removesuffix('index.php') for p in files}
 seen={R/'index.html'};q=deque(seen)
 while q:
  for x in graph[q.popleft()]:
   if x not in seen:seen.add(x);q.append(x)
-assert len(seen)==41,'Orphan pages'
+assert len(seen)==42,'Orphan pages'
 assert all(len(graph[p])>=5 for p in files[1:]),'Insufficient internal linking'
 assert not re.search(r'data:image/\w+;base64', (R/'index.html').read_text())
 assert 'Sitemap: '+BASE+'/sitemap.xml' in (R/'robots.txt').read_text()
 assert len(json.loads((R/'ai-info.json').read_text())['pages'])==40
-summary={'new_pages':40,'indexable_pages':41,'sitemap_urls':len(locs),'reachable_from_home':len(seen),'minimum_internal_page_links':min(len(graph[p]) for p in files[1:]),'minimum_visible_word_count':min(len(' '.join(d.words).split()) for d in list(docs.values())[1:]),'unique_titles':len(set(titles)),'unique_descriptions':len(set(descs)),'errors':errors}
+summary={'new_pages':40,'indexable_pages':42,'sitemap_urls':len(locs),'reachable_from_home':len(seen),'minimum_internal_page_links':min(len(graph[p]) for p in files[1:]),'minimum_visible_word_count':min(len(' '.join(d.words).split()) for d in list(docs.values())[1:]),'unique_titles':len(set(titles)),'unique_descriptions':len(set(descs)),'errors':errors}
 print(json.dumps(summary,ensure_ascii=False,indent=2))
 (R/'validation.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2))
 assert not errors

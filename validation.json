@@ -1,11 +1,11 @@
 {
   "new_pages": 40,
-  "indexable_pages": 41,
-  "sitemap_urls": 41,
-  "reachable_from_home": 41,
-  "minimum_internal_page_links": 15,
-  "minimum_visible_word_count": 774,
-  "unique_titles": 41,
-  "unique_descriptions": 41,
+  "indexable_pages": 42,
+  "sitemap_urls": 42,
+  "reachable_from_home": 42,
+  "minimum_internal_page_links": 16,
+  "minimum_visible_word_count": 360,
+  "unique_titles": 42,
+  "unique_descriptions": 42,
   "errors": []
 }
