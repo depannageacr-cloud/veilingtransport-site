@@ -1,0 +1,221 @@
+{
+  "name": "Veilingtransport by ACR",
+  "url": "https://www.veilingtransport.be/",
+  "contact": {
+    "telephone": "+32471379064",
+    "email": "depannageacr@hotmail.com"
+  },
+  "provider": "ACR",
+  "requestRequirements": [
+    "kavellink en kavelnummer",
+    "laad- en losadres",
+    "afhaalvenster",
+    "maten, massa en toestand",
+    "laad- en losmogelijkheden"
+  ],
+  "booking": "Uitvoering, prijs en planning na individuele bevestiging",
+  "platformRelationship": "Geen officiële samenwerking of vertegenwoordiging geclaimd",
+  "lastUpdated": "2026-11-14",
+  "pages": [
+    {
+      "name": "Veilingvoertuig laten ophalen en vervoeren",
+      "url": "https://www.veilingtransport.be/veilingtransport-voertuigen/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Goederen en machines van een veiling vervoeren",
+      "url": "https://www.veilingtransport.be/veilingtransport-goederen/",
+      "category": "Goederen"
+    },
+    {
+      "name": "Wat kost transport van een veilingaankoop?",
+      "url": "https://www.veilingtransport.be/veilingtransport-kosten/",
+      "category": "Voorbereiding"
+    },
+    {
+      "name": "Troostwijk-kavel laten ophalen met ACR",
+      "url": "https://www.veilingtransport.be/troostwijk-transport/",
+      "category": "Platformen"
+    },
+    {
+      "name": "Vavato-aankoop laten ophalen en leveren",
+      "url": "https://www.veilingtransport.be/vavato-transport/",
+      "category": "Platformen"
+    },
+    {
+      "name": "Auctim-kavel laten ophalen door een transporteur",
+      "url": "https://www.veilingtransport.be/auctim-transport/",
+      "category": "Platformen"
+    },
+    {
+      "name": "Auto op een veiling gekocht: laten ophalen",
+      "url": "https://www.veilingtransport.be/veiling-auto-ophalen/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Niet-rijdende veilingauto laten vervoeren",
+      "url": "https://www.veilingtransport.be/niet-rijdende-veilingauto/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Schadeauto van een veiling laten ophalen",
+      "url": "https://www.veilingtransport.be/schadeauto-veiling-transport/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Veilingauto zonder sleutel laten ophalen",
+      "url": "https://www.veilingtransport.be/veilingauto-zonder-sleutel/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Elektrische veilingauto laten transporteren",
+      "url": "https://www.veilingtransport.be/elektrische-veilingauto-transport/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Bestelwagen van een veiling laten ophalen",
+      "url": "https://www.veilingtransport.be/bestelwagen-veiling-transport/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Motor van een veiling laten ophalen",
+      "url": "https://www.veilingtransport.be/motor-veiling-transport/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Quad of buggy van een veiling vervoeren",
+      "url": "https://www.veilingtransport.be/quad-buggy-veiling-transport/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Camper of mobilhome van een veiling vervoeren",
+      "url": "https://www.veilingtransport.be/camper-veiling-transport/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Caravan op een veiling gekocht: transport regelen",
+      "url": "https://www.veilingtransport.be/caravan-veiling-transport/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Oldtimer van een veiling laten transporteren",
+      "url": "https://www.veilingtransport.be/oldtimer-veiling-transport/",
+      "category": "Voertuigen"
+    },
+    {
+      "name": "Pallets van een veiling laten ophalen",
+      "url": "https://www.veilingtransport.be/pallet-veiling-transport/",
+      "category": "Goederen"
+    },
+    {
+      "name": "Machine uit een veiling laten vervoeren",
+      "url": "https://www.veilingtransport.be/machine-veiling-transport/",
+      "category": "Goederen"
+    },
+    {
+      "name": "Heftruck van een veiling laten ophalen",
+      "url": "https://www.veilingtransport.be/heftruck-veiling-transport/",
+      "category": "Goederen"
+    },
+    {
+      "name": "Minigraver van een veiling laten vervoeren",
+      "url": "https://www.veilingtransport.be/minigraver-veiling-transport/",
+      "category": "Goederen"
+    },
+    {
+      "name": "Landbouwmachine uit een veiling transporteren",
+      "url": "https://www.veilingtransport.be/landbouwmachine-veiling-transport/",
+      "category": "Goederen"
+    },
+    {
+      "name": "Garage-inventaris van een veiling laten ophalen",
+      "url": "https://www.veilingtransport.be/garage-inventaris-veiling-transport/",
+      "category": "Goederen"
+    },
+    {
+      "name": "Horeca-inventaris van een veiling transporteren",
+      "url": "https://www.veilingtransport.be/horeca-inventaris-veiling-transport/",
+      "category": "Goederen"
+    },
+    {
+      "name": "Kantoorinventaris uit een veiling laten vervoeren",
+      "url": "https://www.veilingtransport.be/kantoorinventaris-veiling-transport/",
+      "category": "Goederen"
+    },
+    {
+      "name": "Meerdere veilingkavels samen laten ophalen",
+      "url": "https://www.veilingtransport.be/meerdere-kavels-ophalen/",
+      "category": "Voorbereiding"
+    },
+    {
+      "name": "Veilingtransport binnen België regelen",
+      "url": "https://www.veilingtransport.be/veilingtransport-belgie/",
+      "category": "Routes"
+    },
+    {
+      "name": "Veilingtransport van Nederland naar België",
+      "url": "https://www.veilingtransport.be/veilingtransport-nederland-belgie/",
+      "category": "Routes"
+    },
+    {
+      "name": "Veilingaankoop uit Duitsland naar België vervoeren",
+      "url": "https://www.veilingtransport.be/veilingtransport-duitsland-belgie/",
+      "category": "Routes"
+    },
+    {
+      "name": "Veilingtransport van Luxemburg naar België",
+      "url": "https://www.veilingtransport.be/veilingtransport-luxemburg-belgie/",
+      "category": "Routes"
+    },
+    {
+      "name": "Veilingtransport van Frankrijk naar België",
+      "url": "https://www.veilingtransport.be/veilingtransport-frankrijk-belgie/",
+      "category": "Routes"
+    },
+    {
+      "name": "Veilingaankoop laten vervoeren naar Spanje",
+      "url": "https://www.veilingtransport.be/veilingtransport-spanje/",
+      "category": "Routes"
+    },
+    {
+      "name": "Transport van een veilingaankoop naar Italië",
+      "url": "https://www.veilingtransport.be/veilingtransport-italie/",
+      "category": "Routes"
+    },
+    {
+      "name": "Afhaaldag van een veiling goed regelen",
+      "url": "https://www.veilingtransport.be/afhaaldag-veiling-regelen/",
+      "category": "Voorbereiding"
+    },
+    {
+      "name": "Documenten voor afhaling van veilingaankopen",
+      "url": "https://www.veilingtransport.be/veilingtransport-documenten/",
+      "category": "Voorbereiding"
+    },
+    {
+      "name": "Laden en lossen bij veilingtransport voorbereiden",
+      "url": "https://www.veilingtransport.be/laden-lossen-veiling/",
+      "category": "Voorbereiding"
+    },
+    {
+      "name": "Transportofferte aanvragen vóór u biedt",
+      "url": "https://www.veilingtransport.be/veilingtransport-offerte-voor-bieden/",
+      "category": "Voorbereiding"
+    },
+    {
+      "name": "Checklist: veilingaankoop laten ophalen",
+      "url": "https://www.veilingtransport.be/veilingtransport-checklist/",
+      "category": "Voorbereiding"
+    },
+    {
+      "name": "Veelgestelde vragen over veilingtransport",
+      "url": "https://www.veilingtransport.be/veelgestelde-vragen-veilingtransport/",
+      "category": "Voorbereiding"
+    },
+    {
+      "name": "Veilingtransport by ACR: diensten en contactgegevens",
+      "url": "https://www.veilingtransport.be/veilingtransport-acr-informatie/",
+      "category": "Voorbereiding"
+    }
+  ]
+}
